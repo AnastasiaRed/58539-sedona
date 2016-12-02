@@ -1,0 +1,13 @@
+.photos-item{
+  margin: 0;
+}
+.photos-item__title{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.photos-item__author{
+  font-size: 14px;
+  line-height: 1.5em;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,14 +15,14 @@
           <li class="main-menu__item"><a href="#">HTML Academy</a></li>
         </ul>
         <a href="#" class="page-header__logo">
-          <img src="logo.svg#" alt="City of Sedona" />
+          <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona" />
         </a>
-        <a href="#" class="menu-opener">open</a>
+        <a href="#" class="menu-trigger">open</a>
       </nav>
     </header>
     <main>
       <section class="intro">
-        <img src="sedona-inner.svg" class="intro__image" alt="welcome to the gorgeous Sedona" />
+        <img src="img/text-sedona.svg" width="230" height="40" class="intro__image" alt="welcome to the gorgeous Sedona" />
       </section>
       <section class="photo-video">
         <h1 class="photo-video__title">Фото и видео</h1>
@@ -31,7 +32,7 @@
         <section class="photos-list">
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
-              <img src="landscape.jpg" alt="beautiful road"/>
+              <img src="img/photo-1-mobile@1x.jpg" alt="beautiful road"/>
             </a>
             <figcaption class="photos-item__description">
               <h3 class="photos-item__title">Народные просторы</h3>
@@ -44,7 +45,7 @@
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
-              <img src="flora.jpg" alt="amazing local flora"/>
+              <img src="img/photo-2-mobile@1x.jpg" alt="amazing local flora"/>
             </a>
             <figcaption class="photos-item__description">
               <h3 class="photos-item__title">Местная растительность</h3>
@@ -57,20 +58,7 @@
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
-              <img src="flora.jpg" alt="amazing local flora"/>
-            </a>
-            <figcaption class="photos-item__description">
-              <h3 class="photos-item__title">Местная растительность</h3>
-              <p class="photos-item__author">Автор фото: Сергей</p>
-            </figcaption>
-            <div class="likes">
-              <a class="likes__link" href="#">I like this!</a>
-              <span class="likes__counter">143</span>
-            </div>
-          </figure>
-          <figure class="photos-item">
-            <a href="#" class="photos-item__link">
-              <img src="road-north.jpg" alt="green road north"/>
+              <img src="img/photo-3-mobile@1x.jpg" alt="green road north"/>
             </a>
             <figcaption class="photos-item__description">
               <h3 class="photos-item__title">Дорога на север</h3>
@@ -83,7 +71,7 @@
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
-              <img src="devils-bridge.jpg" alt="canyon"/>
+              <img src="img/photo-4-mobile@1x.jpg" alt="canyon"/>
             </a>
             <figcaption class="photos-item__description">
               <h3 class="photos-item__title">Мост дьявола</h3>
@@ -99,14 +87,14 @@
           <h2 class="presentation__title">Все еще сомневаетесь?</h2>
           <p class="presentation__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="presentation-video">
-            <img src="presentation-poster.jpg" alt="the road to the canyon" />
+            <img src="img/video-mobile@1x.jpg" alt="the road to the canyon" />
             <div class="video-slider">
               <button class="video-slider__remote-control" type="button">Потяни, чтобы перемотать</button>
             </div>
             <div class="presentation-video-controls">
-              <button class="video-restart-control" type="button">Перезапустить видео</button>
-              <button class="video-subtitles-control" type="button">Включить субтитры</button>
-              <button class="video-fullscreen-control" type="button">Открыть на весь экран</button>
+              <button class="video-control video-control--restart" type="button">Перезапустить видео</button>
+              <button class="video-control video-control--subtitles" type="button">Включить субтитры</button>
+              <button class="video-control video-control--fullscreen" type="button">Открыть на весь экран</button>
             </div>
           </div>
         </section>
