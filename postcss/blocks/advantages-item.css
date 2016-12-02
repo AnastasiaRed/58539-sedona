@@ -1,0 +1,26 @@
+.advantages-item__header{
+  background: $bg-advantages;
+
+  &--highlight{
+    background: $bg-main-menu;
+    color: $color-text-inverse;
+  }
+}
+.advantages-item__title{
+  font-size: 18px;
+  line-height: 1.444em;
+  margin: 0 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-item__counter{
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center;
+}
+.advantages-item__paragraph{
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}

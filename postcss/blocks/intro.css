@@ -1,0 +1,8 @@
+.intro{
+  @mixin container;
+  background: $bg-intro url(/img/bg-back-mobile@1x.jpg) no-repeat center / cover;
+  box-sizing: border-box;
+  color: $color-text-inverse;
+  padding: 90px 20px;
+  text-align: center;
+}

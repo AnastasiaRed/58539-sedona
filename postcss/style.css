@@ -1,0 +1,43 @@
+@import "global/fonts.css";
+@import "global/variables.css";
+@import "global/mixin.css";
+@import "global/scaffolding.css";
+
+@import "blocks/btn.css";
+
+/*header*/
+@import "blocks/page-header.css";
+@import "blocks/main-menu.css";
+@import "blocks/menu-trigger.css";
+
+/*page content*/
+@import "blocks/intro.css";
+
+@import "blocks/advantages.css";
+@import "blocks/advantages-list.css";
+@import "blocks/advantages-item.css";
+@import "blocks/advantages-description-list.css";
+@import "blocks/advantages-description-item.css";
+
+@import "blocks/hotels.css";
+
+@import "blocks/photo-video.css";
+@import "blocks/photos-list.css";
+@import "blocks/photos-item.css";
+@import "blocks/likes.css";
+
+@import "blocks/presentation.css";
+@import "blocks/presentation-video.css";
+@import "blocks/video-slider.css";
+@import "blocks/presentation-video-controls.css";
+@import "blocks/video-control.css";
+
+@import "blocks/review.css";
+@import "blocks/review-form.css";
+@import "blocks/review-control.css";
+
+/*footer*/
+@import "blocks/page-footer.css";
+@import "blocks/social-list.css";
+@import "blocks/social-item.css";
+@import "blocks/copyright.css";

@@ -1,0 +1,8 @@
+.page-header__inner{
+  position: relative;
+  @mixin container;
+}
+.page-header__logo{
+  display: block;
+  text-align: center;
+}

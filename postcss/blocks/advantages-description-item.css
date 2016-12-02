@@ -1,0 +1,12 @@
+.advantages-description-item__title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.444em;
+  text-transform: uppercase;
+}
+
+.advantages-description-item__paragraph{
+  font-size: 14px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}

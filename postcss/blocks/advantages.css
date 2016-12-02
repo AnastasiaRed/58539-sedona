@@ -1,0 +1,15 @@
+.advantages{
+  @mixin container;
+}
+.advantages__slogan{
+  font-size: 18px;
+  line-height: 1.444em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages__paragraph{
+  font-size: 14px;
+  line-height: 1.857em;
+  text-align: center;
+  text-transform: uppercase;
+}
