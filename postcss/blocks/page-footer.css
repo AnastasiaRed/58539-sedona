@@ -1,10 +1,20 @@
 .page-footer{
   @mixin container;
+  box-sizing: border-box;
+  padding: 40px 20px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-widths){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 60px 20px;
+  }
 }
 .page-footer__hashtag{
   font-size: 21px;
   line-height: 1.238em;
+  margin: 0 0 35px;
   font-weight: bold;
   text-transform: uppercase;
 }

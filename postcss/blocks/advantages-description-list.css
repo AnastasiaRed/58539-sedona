@@ -1,0 +1,13 @@
+.advantages-description-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 25px 25px 21px;
+
+  @media (min-width: $tablet-widths){
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1 1 256px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,15 +1,28 @@
 .advantages{
   @mixin container;
 }
+.advantages__inner{
+  padding: 35px 20px 25px;
+
+  @media (min-width: $tablet-widths){
+    padding: 47px 90px 30px;
+  }
+}
 .advantages__slogan{
   font-size: 18px;
-  line-height: 1.444em;
+  line-height: 26px;
+  margin: 0 0 29px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths){
+    font-size: 21px;
+  }
 }
 .advantages__paragraph{
   font-size: 14px;
   line-height: 1.857em;
+  margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
 }

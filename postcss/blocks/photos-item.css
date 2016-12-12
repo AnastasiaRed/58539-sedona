@@ -1,13 +1,32 @@
 .photos-item{
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
   margin: 0;
+  padding: 22px 20px 0;
+
+  @media (min-width: $tablet-widths){
+    border: 0;
+  }
+  &:first-of-type{
+    border-top: 1px solid #e5e5e5;
+
+    @media (min-width: $tablet-widths){
+      border: 0;
+    }
+  }
+}
+.photos-item__description{
+  padding: 15px 0;
 }
 .photos-item__title{
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 24px;
+  margin: 0;
   text-transform: uppercase;
 }
 .photos-item__author{
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 24px;
+  margin: 0 0 5px;
 }
