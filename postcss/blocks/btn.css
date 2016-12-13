@@ -1,5 +1,6 @@
 .btn{
   background: $bg-main-menu;
+  border: 0;
   color: $color-text-inverse;
   display: block;
   font-size: 21px;

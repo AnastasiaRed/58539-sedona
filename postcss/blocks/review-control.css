@@ -1,0 +1,74 @@
+.review-control{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 20px;
+  position: relative;
+
+  &--checkbox{
+    @media (min-width: $tablet-widths){
+      flex: 1 1 50%;
+    }
+    @media (min-width: $desktop-widths){
+      flex: 1 1 25%;
+    }
+  }
+
+  &--column{
+    display: block;
+
+    @media (min-width: $desktop-widths){
+      display: inherit;
+      flex: 1 1 50%;
+    }
+
+    label{
+      display: block;
+      padding-left: 20px;
+    }
+    input{
+      display: block;
+      width: 100%;
+    }
+  }
+  label{
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: 13px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  input[type=text],
+  input[type=tel],
+  input[type=email],
+  textarea{
+    background: $bg-light-grey;
+    border: 0;
+    box-sizing: border-box;
+    color: $color-text;
+    flex: 1 1 0;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 15px 21px;
+    resize: none;
+  }
+
+  input[type=text]{
+    width: 100px;
+  }
+
+  textarea{
+    @media (min-width: $tablet-widths){
+      height: 160px;
+    }
+  }
+}
+
+@media (max-width: $desktop-widths){
+  .review-control--column + .review-control--column{
+    margin-top: 42px;
+  }
+}

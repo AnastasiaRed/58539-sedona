@@ -1,0 +1,6 @@
+.error{
+  color: $color-error;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 20px;
+}

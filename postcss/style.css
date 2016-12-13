@@ -1,6 +1,7 @@
 @import "global/fonts.css";
 @import "global/variables.css";
 @import "global/mixin.css";
+@import "global/normalize.css";
 @import "global/scaffolding.css";
 
 @import "blocks/btn.css";
@@ -34,7 +35,10 @@
 
 @import "blocks/review.css";
 @import "blocks/review-form.css";
+@import "blocks/review-fieldset.css";
 @import "blocks/review-control.css";
+@import "blocks/comment.css";
+@import "blocks/error.css";
 
 /*footer*/
 @import "blocks/page-footer.css";

@@ -1,16 +1,38 @@
 .review{
   @mixin container;
+  padding-top: 37px;
+
+  @media (min-width: $tablet-widths){
+    padding-top: 76px;
+  }
+}
+.review__inner{
+  border-bottom: 1px solid $border-color;
+  padding: 0 22px 20px;
+
+  @media (min-width: $tablet-widths){
+    border-bottom: 0;
+    padding-bottom: 60px;
+  }
 }
 .review__title{
   font-size: 18px;
-  line-height: 1.444em;
-  margin: 0 0 20px;
+  line-height: 26px;
+  margin: 0 0 25px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths){
+    font-size: 30px;
+    margin: 0 0 29px;
+  }
 }
 .review__paragraph{
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 24px;
+  padding: 0;
+  margin: 0 auto ;
+  max-width: 445px;
   text-align: center;
   text-transform: uppercase;
 }

@@ -1,0 +1,77 @@
+.review-fieldset{
+  border: 0;
+  border-bottom: 1px solid $border-color;
+  box-sizing: border-box;
+  margin: 16px 0 18px;
+  padding: 0px 20px 5px;
+
+  @media (min-width: $tablet-widths){
+    flex: 1 1 100%;
+    border: 0;
+    padding: 0;
+  }
+
+  &--person{
+    @media (min-width: $tablet-widths){
+      border: 0;
+      border-left: 1px solid $border-color;
+      flex-basis: 50%;
+      padding-left: 57px;
+
+      legend{
+        margin-bottom: 57px;
+        text-align: left;
+      }
+    }
+
+    @media (min-width: $desktop-widths){
+      padding-left: 80px;
+    }
+  }
+  &--impression{
+    @media (min-width: $tablet-widths){
+      flex-basis: 50%;
+      order: -1;
+
+      legend{
+        margin-bottom: 57px;
+        text-align: left;
+      }
+    }
+  }
+
+  &:last-of-type{
+    border: 0;
+  }
+
+  legend{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    line-height: 26px;
+    margin: 0 auto 23px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @media (min-width: $tablet-widths){
+      font-size: 21px;
+    }
+  }
+}
+.review-fieldset__checkbox-wrap{
+    @media (min-width: $tablet-widths){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+}
+.review-fieldset__contact-wrap{
+  @media (min-width: $desktop-widths){
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}

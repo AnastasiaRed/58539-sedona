@@ -4,4 +4,9 @@
   justify-content: space-between;
   margin: 0 20px 36px;
   padding: 20px 6px 23px 9px;
+
+  @media (min-width: $tablet-widths){
+    background: none;
+    margin-top: -65px;
+  }
 }
