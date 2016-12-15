@@ -1,0 +1,13 @@
+.likes{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.likes__link{
+  margin-right: 15px;
+}
+.likes__counter{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}

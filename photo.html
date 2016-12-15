@@ -14,73 +14,85 @@
           <li class="main-menu__item"><a href="#">Форма отзыва</a></li>
           <li class="main-menu__item"><a href="#">HTML Academy</a></li>
         </ul>
+        <a href="#" class="menu-trigger">
+          <img src="img/icon-menu.svg" width="23" height="23" alt="open menu" />
+        </a>
         <a href="#" class="page-header__logo">
           <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona" />
         </a>
-        <a href="#" class="menu-trigger">open</a>
       </nav>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro intro--inner">
         <img src="img/text-sedona.svg" width="230" height="40" class="intro__image" alt="welcome to the gorgeous Sedona" />
       </section>
       <section class="photo-video">
-        <h1 class="photo-video__title">Фото и видео</h1>
-        <p class="photo-video__paragraph">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
+        <div class="photo-video__inner">
+          <h1 class="photo-video__title">Фото и видео</h1>
+          <p class="photo-video__paragraph">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам&nbsp;забыть о политике и экономике.
+          </p>
+        </div>
         <section class="photos-list">
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
               <img src="img/photo-1-mobile@1x.jpg" alt="beautiful road"/>
             </a>
             <figcaption class="photos-item__description">
-              <h3 class="photos-item__title">Народные просторы</h3>
-              <p class="photos-item__author">Автор фото: Борис</p>
+              <div class="photos-item__desc-wrap">
+                <h3 class="photos-item__title">Народные просторы</h3>
+                <p class="photos-item__author">Автор фото: Борис</p>
+              </div>
+              <div class="likes">
+                <a class="likes__link" href="#"><img src="img/icon-like.svg" width="22" height="22" alt="I like this!" /></a>
+                <span class="likes__counter">1350</span>
+              </div>
             </figcaption>
-            <div class="likes">
-              <a class="likes__link" href="#">I like this!</a>
-              <span class="likes__counter">1350</span>
-            </div>
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
               <img src="img/photo-2-mobile@1x.jpg" alt="amazing local flora"/>
             </a>
             <figcaption class="photos-item__description">
-              <h3 class="photos-item__title">Местная растительность</h3>
-              <p class="photos-item__author">Автор фото: Сергей</p>
+              <div class="photos-item__desc-wrap">
+                <h3 class="photos-item__title">Местная растительность</h3>
+                <p class="photos-item__author">Автор фото: Сергей</p>
+              </div>
+              <div class="likes">
+                <a class="likes__link" href="#"><img src="img/icon-like.svg" width="22" height="22" alt="I like this!" /></a>
+                <span class="likes__counter">143</span>
+              </div>
             </figcaption>
-            <div class="likes">
-              <a class="likes__link" href="#">I like this!</a>
-              <span class="likes__counter">143</span>
-            </div>
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
               <img src="img/photo-3-mobile@1x.jpg" alt="green road north"/>
             </a>
             <figcaption class="photos-item__description">
-              <h3 class="photos-item__title">Дорога на север</h3>
-              <p class="photos-item__author">Автор фото: Петр</p>
+              <div class="photos-item__desc-wrap">
+                <h3 class="photos-item__title">Дорога на север</h3>
+                <p class="photos-item__author">Автор фото: Петр</p>
+              </div>
+              <div class="likes">
+                <a class="likes__link" href="#"><img src="img/icon-like.svg" width="22" height="22" alt="I like this!" /></a>
+                <span class="likes__counter">96</span>
+              </div>
             </figcaption>
-            <div class="likes">
-              <a class="likes__link" href="#">I like this!</a>
-              <span class="likes__counter">96</span>
-            </div>
           </figure>
           <figure class="photos-item">
             <a href="#" class="photos-item__link">
               <img src="img/photo-4-mobile@1x.jpg" alt="canyon"/>
             </a>
             <figcaption class="photos-item__description">
-              <h3 class="photos-item__title">Мост дьявола</h3>
-              <p class="photos-item__author">Автор фото: Антон</p>
+              <div class="photos-item__desc-wrap">
+                <h3 class="photos-item__title">Мост дьявола</h3>
+                <p class="photos-item__author">Автор фото: Антон</p>
+              </div>
+              <div class="likes">
+                <a class="likes__link" href="#"><img src="img/icon-like.svg" width="22" height="22" alt="I like this!" /></a>
+                <span class="likes__counter">254</span>
+              </div>
             </figcaption>
-            <div class="likes">
-              <a class="likes__link" href="#">I like this!</a>
-              <span class="likes__counter">254</span>
-            </div>
           </figure>
         </section>
         <section class="presentation">
@@ -92,9 +104,9 @@
               <button class="video-slider__remote-control" type="button">Потяни, чтобы перемотать</button>
             </div>
             <div class="presentation-video-controls">
-              <button class="video-control video-control--restart" type="button">Перезапустить видео</button>
-              <button class="video-control video-control--subtitles" type="button">Включить субтитры</button>
-              <button class="video-control video-control--fullscreen" type="button">Открыть на весь экран</button>
+              <button class="video-control video-control--restart" type="button"><img src="img/icon-video-replay.svg" width="16" height="20" alt="Перезапустить видео" /></button>
+              <button class="video-control video-control--subtitles" type="button"><img src="img/icon-video-subtitles.svg" width="32" height="20" alt="Включить субтитры" /></button>
+              <button class="video-control video-control--fullscreen" type="button"><img src="img/icon-video-fullscreen.svg" width="20" height="20" alt="Открыть на весь экран" /></button>
             </div>
           </div>
         </section>

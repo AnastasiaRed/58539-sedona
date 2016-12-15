@@ -1,0 +1,11 @@
+.advantages-list__inline-wrap{
+  background: $bg-advantages;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-widths){
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 365px;
+    padding: 0;
+  }
+}

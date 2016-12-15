@@ -1,0 +1,10 @@
+.photos-list{
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-widths){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px 60px 65px;
+  }
+}

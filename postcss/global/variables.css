@@ -1,8 +1,20 @@
 $tablet-widths: 768px;
 $desktop-widths: 1200px;
 
+/*text color*/
 $color-text: #000;
 $color-text-inverse: #fff;
+$color-error: #ff5c5c;
+
+/*backgrounds*/
 $bg-main-menu: #81b3d2;
+$bg-main-menu-hover: #669ec0;
+$bg-main-menu-focus: #5496bd;
 $bg-intro: #7a8896;
-$bg-advantages: #dfdede;
+$bg-advantages: #eeeeee;
+$bg-light-grey: #f2f2f2;
+
+/*borders*/
+$border-main-menu-light: #9ac2db;
+$border-main-menu-dark: #678fa8;
+$border-color: #e5e5e5;

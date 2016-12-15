@@ -5,4 +5,13 @@
 .page-header__logo{
   display: block;
   text-align: center;
+  padding: 0 70px;
+
+  @media (min-width: $tablet-widths){
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 100%;
+  }
 }

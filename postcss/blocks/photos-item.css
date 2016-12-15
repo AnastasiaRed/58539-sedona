@@ -1,13 +1,73 @@
 .photos-item{
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
   margin: 0;
+  padding: 22px 20px 0;
+
+  @media (min-width: $tablet-widths){
+    border: 0;
+    padding: 0;
+    flex: 0 1 50%;
+  }
+  @media (min-width: $desktop-widths){
+    flex: 1 1 33%;
+    position: relative;
+  }
+  &:first-of-type{
+    @media (min-width: $tablet-widths){
+      flex-basis: 100%;
+    }
+  }
+}
+.photos-item__description{
+  padding: 15px 0;
+
+  @media (min-width: $tablet-widths){
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20px 12px;
+  }
+
+  @media (min-width: $desktop-widths){
+    background: $color-text;
+    box-sizing: border-box;
+    color: $color-text-inverse;
+    margin-top: -80px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }
 .photos-item__title{
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 24px;
+  margin: 0;
   text-transform: uppercase;
 }
+.photos-item__link{
+  display: block;
+  text-align: center;
+
+  /*Temp*/
+  @media (min-width: $tablet-widths){
+    height: 266px;
+    overflow: hidden;
+  }
+  /**/
+}
+/*Temp*/
+.photos-item:first-of-type .photos-item__link{
+    @media (min-width: $tablet-widths){
+      min-height: 400px;
+    }
+}
+/**/
+
 .photos-item__author{
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 24px;
+  margin: 0 0 5px;
 }

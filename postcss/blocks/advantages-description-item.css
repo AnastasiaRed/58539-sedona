@@ -1,12 +1,33 @@
+.advantages-description-item{
+    padding: 10px 0 8px 45px;
+
+    @media (min-width: $tablet-widths){
+      padding: 27px 30px 30px;
+      text-align: center;
+
+      &:first-of-type{
+        order: 1;
+      }
+    }
+}
+
 .advantages-description-item__title{
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.444em;
+  line-height: 26px;
+  margin: 0 0 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths){
+    font-size: 21px;
+    margin: 0 0 20px;
+    padding-top: 107px;
+  }
 }
 
 .advantages-description-item__paragraph{
   font-size: 14px;
   line-height: 1.5em;
+  margin: 0 0 10px;
   text-transform: uppercase;
 }

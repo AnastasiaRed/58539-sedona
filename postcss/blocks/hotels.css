@@ -1,16 +1,48 @@
 .hotels{
   @mixin container;
+  box-sizing: border-box;
+  padding: 28px 0 0;
+
+  @media (min-width: $tablet-widths){
+    padding-top: 51px;
+  }
+}
+.hotels__inner{
+  padding: 0 20px;
 }
 .hotels__title{
   font-size: 21px;
   font-weight: bold;
   line-height: 1.2em;
+  margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths){
+    font-size: 30px;
+    margin: 0 0 25px;
+  }
 }
 .hotels__paragraph{
   font-size: 14px;
   line-height: 1.714em;
+  margin: 0 0 36px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths){
+    padding: 0 20px;
+    margin: 0 0 45px;
+  }
+
+  br{
+    display: none;
+
+    @media (min-width: $tablet-widths){
+      display: block;
+    }
+  }
+}
+.hotels__map{
+  text-align: center;
 }
