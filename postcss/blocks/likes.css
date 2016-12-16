@@ -7,7 +7,7 @@
   margin-right: 15px;
 }
 .likes__counter{
-  font-size: 14px;
+  font-size: $font-size-basic;
   font-weight: bold;
-  line-height: 24px;
+  line-height: $font-line-height-basic;
 }

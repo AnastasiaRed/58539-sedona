@@ -1,5 +1,5 @@
 .main-menu{
-  background: $bg-main-menu;
+  background: $color-bg-main;
   box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2);
   color: $color-text;
   display: flex;
@@ -9,7 +9,7 @@
   padding: 0;
   text-align: center;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     flex-direction: row;
     justify-content: space-between;
     background: none;
@@ -18,9 +18,19 @@
     padding: 19px 0 20px;
   }
 }
+@media (max-width: $width-tablet){
+  .main-menu,
+  .page-header--closed .main-menu{
+    display: none;
+  }
+  .page-header--nojs .main-menu,
+  .page-header--opened .main-menu{
+    display: flex;
+  }
+}
 .main-menu__item{
   color: $color-text-inverse;
-  font-size: 18px;
+  font-size: $font-size-headline;
   text-transform: uppercase;
 
   &:first-of-type a{
@@ -30,8 +40,8 @@
     border-bottom: 0;
   }
 
-  @media (min-width: $tablet-widths){
-    font-size: 14px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-basic;
     font-weight: bold;
     padding: 0 20px;
 
@@ -48,14 +58,14 @@
 
   a{
     box-sizing: border-box;
-    border-top: 1px solid $border-main-menu-light;
-    border-bottom: 1px solid $border-main-menu-dark;
-    color: $color-text-inverse;
+    border-top: 1px solid $color-border-menu-light;
+    border-bottom: 1px solid $color-border-menu-dark;
+    color: $color-text-light;
     display: block;
-    padding: 16px 20px 15px;
+    padding: 17px 20px 17px;
     text-decoration: none;
 
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       border: 0;
       color: $color-text;
       padding: 0;

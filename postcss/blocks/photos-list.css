@@ -1,7 +1,7 @@
 .photos-list{
   margin-bottom: 32px;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

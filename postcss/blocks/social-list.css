@@ -1,6 +1,7 @@
 .social-list{
   display: flex;
+  justify-content: center;
   list-style-type: none;
+  margin-bottom: 30px;
   padding: 0;
-  margin-bottom: 45px;
 }

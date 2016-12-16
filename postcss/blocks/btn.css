@@ -1,16 +1,43 @@
 .btn{
-  background: $bg-main-menu;
+  background: $color-bg-main;
   border: 0;
-  color: $color-text-inverse;
+  color: $color-text-light;
   display: block;
-  font-size: 21px;
+  font-size: $font-size-headline-bigger;
   font-weight: bold;
-  line-height: 26px;
+  line-height: $font-line-height-headline;
   margin: 0 auto 50px;
   max-width: 420px;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: $transition-main;
   vertical-align: top;
+
+  &--hover,
+  &:hover{
+    background: $color-bg-main-darken;
+  }
+
+  &--focus,
+  &:focus{
+    color: $color-light-transparent;
+    background: $color-bg-main-dark;
+  }
+
+  &--disabled,
+  &:disabled{
+    color: $color-text-light;
+    background: $color-bg-main-dark;
+  }
+  &--in-progress{
+     animation: blink 3s linear infinite;
+  }
+}
+
+@keyframes blink {
+  0% {background-color: #5496bd;}
+  50% {background-color: #3e84ae;}
+  100% {background-color: #5496bd;}
 }

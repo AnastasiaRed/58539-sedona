@@ -5,14 +5,14 @@
   margin: 16px 0 18px;
   padding: 0px 20px 5px;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     flex: 1 1 100%;
     border: 0;
     padding: 0;
   }
 
   &--person{
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       border: 0;
       border-left: 1px solid $border-color;
       flex-basis: 50%;
@@ -24,12 +24,12 @@
       }
     }
 
-    @media (min-width: $desktop-widths){
+    @media (min-width: $width-desktop){
       padding-left: 80px;
     }
   }
   &--impression{
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       flex-basis: 50%;
       order: -1;
 
@@ -45,10 +45,10 @@
   }
 
   legend{
-    font-size: 18px;
+    font-size: $font-size-headline;
     font-weight: bold;
     display: block;
-    line-height: 26px;
+    line-height: $font-line-height-headline;
     margin: 0 auto 23px;
     padding: 0;
     position: relative;
@@ -56,20 +56,20 @@
     text-transform: uppercase;
     width: 100%;
 
-    @media (min-width: $tablet-widths){
-      font-size: 21px;
+    @media (min-width: $width-tablet){
+      font-size: $font-size-headline-bigger;
     }
   }
 }
 .review-fieldset__checkbox-wrap{
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
 }
 .review-fieldset__contact-wrap{
-  @media (min-width: $desktop-widths){
+  @media (min-width: $width-desktop){
     display: flex;
     width: 100%;
     align-items: center;

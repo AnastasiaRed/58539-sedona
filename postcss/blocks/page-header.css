@@ -6,8 +6,10 @@
   display: block;
   text-align: center;
   padding: 0 70px;
+  position: relative;
+  z-index: 1;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     position: absolute;
     left: 0;
     top: 0;

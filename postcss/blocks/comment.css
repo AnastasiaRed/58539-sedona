@@ -1,9 +1,9 @@
 .comment{
-  font-size: 14px;
-  line-height: 26px;
+  font-size: $font-size-basic;
+  line-height: $font-line-height-headline;
   text-transform: uppercase;
 
-  @media (max-width: $tablet-widths){
+  @media (max-width: $width-tablet){
     display: none;
   }
 }

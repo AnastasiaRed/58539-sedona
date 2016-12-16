@@ -2,32 +2,32 @@
   max-width: 620px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  @media (min-width: $desktop-widths){
+  @media (min-width: $width-desktop){
     max-width: 960px;
   }
 }
 .review-form__error{
   position: absolute;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     top: 0;
     right: 0;
   }
 
-  @media (min-width: $desktop-widths){
+  @media (min-width: $width-desktop){
     top: -25px;
     text-align: center;
     width: 100%;
   }
 }
 .review-form__submit-wrap{
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -35,7 +35,7 @@
 }
 
 .review-form__btn{
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     margin-left: 0;
     margin-right: 0;
   }

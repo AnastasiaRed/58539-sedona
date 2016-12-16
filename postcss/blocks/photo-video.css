@@ -2,30 +2,30 @@
   @mixin container;
   padding-top: 37px;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     padding-top: 74px;
   }
 }
 .photo-video__inner{
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $color-border;
   padding: 0 20px 30px;
   margin: 0;
 }
 .photo-video__title{
-  font-size: 18px;
-  line-height: 26px;
+  font-size: $font-size-headline;
+  line-height: $font-line-height-headline;
   margin: 0 0 23px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
-    font-size: 30px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-big;
     margin: 0 0 29px;
   }
 }
 .photo-video__paragraph{
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $font-size-basic;
+  line-height: $font-line-height-basic;
   padding: 0;
   margin: 0 auto;
   max-width: 445px;

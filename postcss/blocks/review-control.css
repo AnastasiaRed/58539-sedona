@@ -6,10 +6,10 @@
   position: relative;
 
   &--checkbox{
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       flex: 1 1 50%;
     }
-    @media (min-width: $desktop-widths){
+    @media (min-width: $widths-desktop){
       flex: 1 1 25%;
     }
   }
@@ -17,7 +17,7 @@
   &--column{
     display: block;
 
-    @media (min-width: $desktop-widths){
+    @media (min-width: $width-desktop){
       display: inherit;
       flex: 1 1 50%;
     }
@@ -32,8 +32,8 @@
     }
   }
   label{
-    font-size: 14px;
-    line-height: 26px;
+    font-size: $font-size-basic;
+    line-height: $font-line-height-headline;
     margin-right: 13px;
     padding: 0 0 10px;
     text-transform: uppercase;
@@ -43,15 +43,15 @@
   input[type=tel],
   input[type=email],
   textarea{
-    background: $bg-light-grey;
+    background: $color-bg-caption;
     border: 0;
     box-sizing: border-box;
     color: $color-text;
     flex: 1 1 0;
     font-family: inherit;
-    font-size: 18px;
+    font-size: $font-size-headline;
     font-weight: bold;
-    line-height: 26px;
+    line-height: $font-line-height-headline;
     padding: 15px 21px;
     resize: none;
   }
@@ -61,13 +61,13 @@
   }
 
   textarea{
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       height: 160px;
     }
   }
 }
 
-@media (max-width: $desktop-widths){
+@media (max-width: $width-desktop){
   .review-control--column + .review-control--column{
     margin-top: 42px;
   }
