@@ -91,11 +91,11 @@
       color: $color-text;
       padding: 0;
 
-      :hover{
+      &:hover{
         background: 0;
         color: $color-bg-main;
       }
-      :focus{
+      &:focus{
         background: 0;
         color: #cacaca;
       }
