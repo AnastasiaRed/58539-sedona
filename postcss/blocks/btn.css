@@ -3,7 +3,7 @@
   border: 0;
   color: $color-text-light;
   display: block;
-  font-family: inherit;;
+  font-family: inherit;
   font-size: $font-size-headline-bigger;
   font-weight: bold;
   line-height: $font-line-height-headline;
@@ -40,6 +40,7 @@
     color: $color-text-light;
     background: $color-bg-main-dark;
   }
+
   &--in-progress{
      animation: blink 3s linear infinite;
   }
