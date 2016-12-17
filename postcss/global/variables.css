@@ -1,7 +1,7 @@
 $transition-main: all 0.3s ease;
 
-$width-tablet: 768px;
-$width-desktop: 1200px;
+$width-tablet: 788px;
+$width-desktop: 1220px;
 
 /*font*/
 $font-size-basic: 14px;
@@ -25,11 +25,10 @@ $color-bg-main-darken: #669ec0;
 $color-bg-main-dark: #5496bd;
 $color-bg-intro: #7a8896;
 $color-bg-advantages: #eeeeee;
-$color-bg-caption: #f2f2f2;
-
-$color-border: #e5e5e5;
-$color-border-menu-light: #9ac2db;
-$color-border-menu-dark: #678fa8;
+$color-bg-grey-light: #f2f2f2;
+$color-bg-grey: #e5e5e5;
+$color-bg-grey-darken: #d5d5d5;
+$color-bg-grey-dark: #a4a4a4;
 
 $color-btn-disable: #e5e5e5;
 $color-btn-academy-down: #b2b2b2;

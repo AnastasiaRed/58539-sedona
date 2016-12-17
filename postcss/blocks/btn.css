@@ -3,6 +3,7 @@
   border: 0;
   color: $color-text-light;
   display: block;
+  font-family: inherit;;
   font-size: $font-size-headline-bigger;
   font-weight: bold;
   line-height: $font-line-height-headline;
@@ -14,6 +15,14 @@
   text-transform: uppercase;
   transition: $transition-main;
   vertical-align: top;
+
+  @media (min-width: $width-tablet){
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $width-desktop){
+    margin-bottom: 69px;
+  }
 
   &--hover,
   &:hover{

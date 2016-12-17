@@ -1,3 +1,17 @@
+.advantages-item br{
+  display: none;
+
+  @media (min-width: $width-desktop){
+    display: block;
+  }
+}
+
+@media (min-width: $width-tablet){
+  .advantages-list__inline-wrap .advantages-item{
+    flex-basis: 34%;
+  }
+}
+
 .advantages-item__header-wrap{
     background: $color-bg-main;
     color: $color-text-light;
@@ -18,8 +32,9 @@
     padding-top: 55px;
   }
 }
+
 .advantages-item__header{
-  padding: 36px 20px 22px;
+  padding: 36px 20px 28px;
 
   @media (min-width: $width-tablet){
     flex: 0 0 256px;
@@ -27,30 +42,48 @@
     padding: 45px 47px 25px;
   }
 
+  @media (min-width: $width-desktop){
+    flex-basis: 400px;
+    padding: 53px 65px 25px;
+  }
+
   &--small{
-    padding: 25px 15px 13px;
+    padding: 25px 15px 15px;
     border-bottom: 1px solid #d6d6d6;
 
     @media (min-width: $width-tablet){
       border: 0;
       padding: 44px 50px 29px;
     }
+
+    @media (min-width: $width-desktop){
+      padding-bottom: 49px;
+    }
   }
   &--last{
     border-bottom: 0;
   }
 }
+
 .advantages-item__title{
   font-size: $font-size-headline;
   line-height: $font-line-height-headline;
-  margin: 0 0 8px;
+  margin: 0 auto 8px;
+  max-width: 160px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet){
     font-size: $font-size-headline-bigger;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-bigger;
+    margin-bottom: 7px;
   }
 }
+
 .advantages-item__counter{
   font-size: $font-size-basic;
   line-height: $font-line-height-headline;
@@ -59,7 +92,7 @@
 
   &::before,
   &::after{
-    background: $color-bg-light;
+    background: currentColor;
     content: "";
     color: inherit;
     display: inline-block;
@@ -72,16 +105,22 @@
     margin: 0 0 20px;
   }
 }
+
 .advantages-item__paragraph{
   font-size: $font-size-basic;
-  line-height: $font-line-height-basic;
+  line-height: $font-line-height-small;
   margin: 0 0 15px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .advantages-item__image{
   height: 260px;
   overflow: hidden;
+
+  @media (min-width: $width-tablet){
+    height: 258px;
+  }
 }
 .advantages-item__image img{
     width: 100%;

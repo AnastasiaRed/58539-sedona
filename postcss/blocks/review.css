@@ -5,14 +5,20 @@
   @media (min-width: $width-tablet){
     padding-top: 76px;
   }
+  @media (min-width: $width-desktop){
+    padding-top: 110px;
+  }
 }
 .review__inner{
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $color-bg-grey;
   padding: 0 22px 20px;
 
   @media (min-width: $width-tablet){
     border-bottom: 0;
     padding-bottom: 60px;
+  }
+  @media (min-width: $width-desktop){
+    padding-bottom: 45px;
   }
 }
 .review__title{

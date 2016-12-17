@@ -3,8 +3,19 @@ body{
   font-style: normal;
   margin: 0;
   padding: 0;
-}
 
+  @media (min-width: $width-desktop){
+    background: $color-bg-grey-light;
+  }
+}
+.page-wrap{
+  @media (min-width: $width-desktop){
+    background: $color-bg-light;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
 img {
   max-width: 100%;
   height: auto;

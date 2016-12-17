@@ -1,7 +1,11 @@
 .social-item{
   margin: 0 3px;
   min-width: 46px;
-  min-height: 46px;
+  min-height: 48px;
+
+  @media (min-width: $width-tablet){
+    margin: 0 6px 0 0;
+  }
 
   a{
     align-items: center;

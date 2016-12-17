@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   padding: 0;
+
+  @media (min-width: $width-tablet){
+    padding-right: 5px;
+  }
+
+  @media (min-width: $width-desktop){
+      padding-right: 85px;
+  }
 }

@@ -1,20 +1,25 @@
-.page-footer{
+.page-footer__inner{
   @mixin container;
   box-sizing: border-box;
   padding: 35px 20px 20px;
   text-align: center;
 
   @media (min-width: $width-tablet){
+    align-items: baseline;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 60px 20px;
+    padding: 33px 52px 5px 62px;
+  }
+  @media (min-width: $width-desktop){
+    padding-right: 38px;
+    padding-left: 131px;
   }
 }
 .page-footer__hashtag{
   font-size: $font-size-headline-bigger;
   line-height: $font-line-height-headline;
-  margin: 0 0 40px;
+  margin: 0 0 37px;
   font-weight: bold;
   text-transform: uppercase;
 }

@@ -2,10 +2,12 @@
   @mixin container;
 }
 .advantages__inner{
+  max-width: 600px;
+  margin: 0 auto;
   padding: 40px 20px 8px;
 
   @media (min-width: $width-tablet){
-    padding: 47px 90px 30px;
+    padding: 49px 90px 30px;
   }
 }
 .advantages__slogan{

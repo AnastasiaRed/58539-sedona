@@ -1,12 +1,19 @@
 .presentation-video-controls{
-  background: $color-bg-caption;
+  background: $color-bg-grey-light;
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 36px;
-  padding: 20px 6px 23px 9px;
+  flex-wrap: wrap;
+  margin: -45px 20px 41px;
+  padding: 0 0 23px 0;
 
   @media (min-width: $width-tablet){
-    background: none;
-    margin-top: -65px;
+    background: $color-dark-transparent;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 35px 42px 35px 35px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 }

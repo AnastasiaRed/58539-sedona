@@ -11,9 +11,8 @@
 
   @media (min-width: $width-tablet){
     position: absolute;
-    left: 0;
+    left: calc(50% - 50px);
     top: 0;
     padding: 0;
-    width: 100%;
   }
 }
