@@ -4,9 +4,6 @@
   margin: 0 auto;
   position: relative;
 
-  @media (min-width: $width-tablet){
-    height: 500px;
-  }
   @media (min-width: $width-desktop){
     max-width: 800px;
   }

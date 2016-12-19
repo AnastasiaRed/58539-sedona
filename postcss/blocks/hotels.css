@@ -48,5 +48,29 @@
   }
 }
 .hotels__map{
+  background: url(../img/bg-map-mobile@1x.jpg) no-repeat center / cover;
+  height: 350px;
   text-align: center;
+
+  @media (max-width: $width-tablet) and (min-resolution: 144dpi),
+  (max-width: $width-tablet) and (min-resolution: 1.5dppx) {
+    background: url(../img/bg-map-mobile@2x.jpg) no-repeat center / cover;
+  }
+
+  @media (min-width: $width-tablet){
+    background: url(../img/bg-map-tablet@1x.jpg) no-repeat center / cover;
+  }
+  @media (min-width: $width-tablet) and (min-resolution: 144dpi),
+  (min-width: $width-tablet) and (min-resolution: 1.5dppx) {
+    background: url(../img/bg-map-tablet@2x.jpg) no-repeat center / cover;
+  }
+
+  @media (min-width: $width-desktop){
+    background: url(../img/bg-map-desktop@1x.jpg) no-repeat center / cover;
+  }
+
+  @media (min-width: $width-desktop) and (min-resolution: 144dpi),
+  (min-width: $width-desktop) and (min-resolution: 1.5dppx) {
+    background: url(../img/bg-map-desktop@2x.jpg) no-repeat center / cover;
+  }
 }
