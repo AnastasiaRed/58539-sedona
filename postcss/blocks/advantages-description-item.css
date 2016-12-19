@@ -1,33 +1,98 @@
 .advantages-description-item{
-    padding: 10px 0 8px 45px;
+    padding: 8px 5px 8px 50px;
+    position: relative;
 
-    @media (min-width: $tablet-widths){
-      padding: 27px 30px 30px;
+    &::before{
+      content: "";
+      display: inline-block;
+      height: 40px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      vertical-align: middle;
+      width: 40px;
+
+      @media (min-width: $width-tablet){
+        height: 80px;
+        margin: 0 auto;
+        right: 0;
+        top: 30px;
+        width: 80px;
+      }
+    }
+    &--house::before{
+      background: url(../img/icon-house.svg) no-repeat center;
+      background-size: 40px;
+
+      @media (min-width: $width-tablet){
+        background-size: 78px;
+      }
+    }
+
+    &--souvenir::before{
+      background: url(../img/icon-gift.svg) no-repeat center;
+      background-size: 40px 37px;
+
+      @media (min-width: $width-tablet){
+        background-size: 63px;
+      }
+    }
+
+    &--food::before{
+      background: url(../img/icon-burger.svg) no-repeat center;
+      background-size: 40px;
+
+      @media (min-width: $width-tablet){
+        background-size: 78px;
+      }
+    }
+
+    br{
+      display: none;
+
+      @media (min-width: $width-tablet){
+        display: block;
+      }
+    }
+
+    @media (min-width: $width-tablet){
+      flex-basis: 30%;
+      padding: 134px 30px 30px;
       text-align: center;
 
       &:first-of-type{
         order: 1;
       }
     }
+
+
+    @media (min-width: $width-desktop){
+      padding: 134px 50px 51px;
+    }
+
+}
+.advantages-description-item--house br{
+  @media (min-width: $width-desktop){
+    display: none;
+  }
 }
 
 .advantages-description-item__title{
-  font-size: 18px;
+  font-size: $font-size-headline;
   font-weight: bold;
-  line-height: 26px;
-  margin: 0 0 14px;
+  line-height: $font-line-height-headline;
+  margin: 0 0 16px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
-    font-size: 21px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-bigger;
     margin: 0 0 20px;
-    padding-top: 107px;
   }
 }
 
 .advantages-description-item__paragraph{
-  font-size: 14px;
-  line-height: 1.5em;
+  font-size: $font-size-basic;
+  line-height: $font-line-height-small;
   margin: 0 0 10px;
   text-transform: uppercase;
 }

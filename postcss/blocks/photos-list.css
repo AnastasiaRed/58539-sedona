@@ -1,10 +1,14 @@
 .photos-list{
   margin-bottom: 32px;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 40px 60px 65px;
+  }
+
+  @media (min-width: $width-desktop){
+    margin: 42px 0 71px;
   }
 }

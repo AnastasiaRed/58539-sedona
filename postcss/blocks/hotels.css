@@ -3,42 +3,46 @@
   box-sizing: border-box;
   padding: 28px 0 0;
 
-  @media (min-width: $tablet-widths){
-    padding-top: 51px;
+  @media (min-width: $width-tablet){
+    padding-top: 55px;
   }
 }
 .hotels__inner{
   padding: 0 20px;
 }
 .hotels__title{
-  font-size: 21px;
+  font-size: $font-size-headline-bigger;
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: $font-line-height-basic;
   margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
-    font-size: 30px;
-    margin: 0 0 25px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-big;
+    margin: 0 0 32px;
   }
 }
 .hotels__paragraph{
-  font-size: 14px;
-  line-height: 1.714em;
+  font-size: $font-size-basic;
+  line-height: $font-line-height-basic;
   margin: 0 0 36px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
+  @media (min-width: $width-tablet){
     padding: 0 20px;
-    margin: 0 0 45px;
+    margin: 0 0 43px;
+  }
+
+  @media (min-width: $width-desktop){
+    margin-bottom: 47px;
   }
 
   br{
     display: none;
 
-    @media (min-width: $tablet-widths){
+    @media (min-width: $width-tablet){
       display: block;
     }
   }

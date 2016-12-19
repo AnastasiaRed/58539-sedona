@@ -2,26 +2,28 @@
   @mixin container;
 }
 .advantages__inner{
-  padding: 35px 20px 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px 8px;
 
-  @media (min-width: $tablet-widths){
-    padding: 47px 90px 30px;
+  @media (min-width: $width-tablet){
+    padding: 49px 90px 30px;
   }
 }
 .advantages__slogan{
-  font-size: 18px;
-  line-height: 26px;
+  font-size: $font-size-headline;
+  line-height: $font-line-height-headline;
   margin: 0 0 29px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
-    font-size: 21px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-bigger;
   }
 }
 .advantages__paragraph{
-  font-size: 14px;
-  line-height: 1.857em;
+  font-size: $font-size-basic;
+  line-height: $font-line-height-basic;
   margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;

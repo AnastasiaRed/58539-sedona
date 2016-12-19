@@ -5,9 +5,19 @@
 }
 .likes__link{
   margin-right: 15px;
+
+  @media (min-width: $width-tablet){
+    margin-right: 10px;
+  }
+
+  @media (min-width: $width-desktop){
+    path{
+      fill: $color-bg-light;
+    }
+  }
 }
 .likes__counter{
-  font-size: 14px;
+  font-size: $font-size-basic;
   font-weight: bold;
-  line-height: 24px;
+  line-height: $font-line-height-basic;
 }

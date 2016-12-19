@@ -1,20 +1,37 @@
-$tablet-widths: 768px;
-$desktop-widths: 1200px;
+$transition-main: all 0.3s ease;
 
-/*text color*/
+$width-tablet: 788px;
+$width-desktop: 1220px;
+
+/*font*/
+$font-size-basic: 14px;
+$font-size-headline: 18px;
+$font-size-headline-bigger: 21px;
+$font-size-headline-big: 30px;
+
+$font-line-height-small: 21px;
+$font-line-height-basic: 24px;
+$font-line-height-headline: 26px;
+
+/*color*/
 $color-text: #000;
-$color-text-inverse: #fff;
-$color-error: #ff5c5c;
+$color-text-light: #fff;
+$color-text-error: #ff5c5c;
 
-/*backgrounds*/
-$bg-main-menu: #81b3d2;
-$bg-main-menu-hover: #669ec0;
-$bg-main-menu-focus: #5496bd;
-$bg-intro: #7a8896;
-$bg-advantages: #eeeeee;
-$bg-light-grey: #f2f2f2;
+$color-bg-light: #ffffff;
+$color-bg-dark: #000000;
+$color-bg-main: #81b3d2;
+$color-bg-main-darken: #669ec0;
+$color-bg-main-dark: #5496bd;
+$color-bg-intro: #7a8896;
+$color-bg-advantages: #eeeeee;
+$color-bg-grey-light: #f2f2f2;
+$color-bg-grey: #e5e5e5;
+$color-bg-grey-darken: #d5d5d5;
+$color-bg-grey-dark: #a4a4a4;
 
-/*borders*/
-$border-main-menu-light: #9ac2db;
-$border-main-menu-dark: #678fa8;
-$border-color: #e5e5e5;
+$color-btn-disable: #e5e5e5;
+$color-btn-academy-down: #b2b2b2;
+
+$color-dark-transparent: rgba(0,0,0,0.3);
+$color-light-transparent: rgba(255,255,255,0.3);

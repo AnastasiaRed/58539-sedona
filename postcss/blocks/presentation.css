@@ -1,23 +1,32 @@
+.presentation{
+  @media(min-width: $width-tablet){
+    margin-bottom: 41px;
+  }
+  @media(min-width: $width-desktop){
+    margin-bottom: 83px;
+  }
+}
 .presentation__title{
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 0 30px;
+  font-size: $font-size-headline;
+  line-height: $font-line-height-headline;
+  margin: 0 0 27px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widths){
-    font-size: 30px;
+  @media (min-width: $width-tablet){
+    font-size: $font-size-headline-big;
+    margin-bottom: 32px;
   }
 }
 .presentation__paragraph{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: $font-size-basic;
+    line-height: $font-line-height-basic;
     margin: 0 30px 35px;
     max-width: 420px;
     text-align: center;
     text-transform: uppercase;
 
-    @media (min-width: $tablet-widths){
-      margin: 0 auto 80px;
+    @media (min-width: $width-tablet){
+      margin: 0 auto 73px;
     }
 }

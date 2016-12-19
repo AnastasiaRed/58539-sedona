@@ -1,3 +1,21 @@
 .copyright{
+  font-size: $font-size-basic;
+  line-height: $font-line-height-headline;
   text-transform: uppercase;
+}
+.copyright__logo{
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+
+  path{
+    fill: $color-text;
+    transition: $transition-main;
+  }
+  &:hover path{
+    fill: $color-bg-main;
+  }
+  &:focus path{
+    fill: $color-btn-academy-down;
+  }
 }
