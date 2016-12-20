@@ -7,6 +7,20 @@ var precss = require("precss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+
+gulp.task("symbols", function() {
+  return gulp.src("img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+  }))
+  .pipe(rename("symbols.svg"))
+  .pipe(gulp.dest("img"));
+});
+
 gulp.task("style", function() {
   gulp.src("postcss/style.css")
     .pipe(plumber())
