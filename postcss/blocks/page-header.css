@@ -11,8 +11,27 @@
 
   @media (min-width: $width-tablet){
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 52px);
     top: 0;
     padding: 0;
+  }
+
+  @media (min-width: $width-desktop){
+    left: calc(50% - 94px);
+  }
+
+  img{
+    width: 100px;
+    height: 80px;
+
+    @media (min-width: $width-tablet){
+      width: 105px;
+      height: 85px;
+    }
+
+    @media (min-width: $width-desktop){
+      width: 185px;
+      height: 95px;
+    }
   }
 }

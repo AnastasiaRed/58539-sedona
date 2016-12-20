@@ -61,22 +61,7 @@
 .photos-item__link{
   display: block;
   text-align: center;
-
-  /*Temp*/
-  @media (min-width: $width-tablet){
-    height: 266px;
-    overflow: hidden;
-  }
-  /**/
 }
-/*Temp*/
-.photos-item:first-of-type .photos-item__link{
-    @media (min-width: $width-tablet){
-      min-height: 400px;
-    }
-}
-/**/
-
 .photos-item__author{
   font-size: $font-size-basic;
   line-height: $font-line-height-basic;
