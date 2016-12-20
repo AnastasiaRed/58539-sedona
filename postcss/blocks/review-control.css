@@ -6,7 +6,7 @@
   position: relative;
 
   @media (min-width: $width-tablet){
-    flex: 1 1 50%;
+    flex: 1 1 43%;
   }
 
   @media (min-width: $widths-desktop){
@@ -75,7 +75,7 @@
   }
 
   input[type=text]{
-    width: 100px;
+    width: 100%;
   }
 
   .review-control__tel-wrap,
@@ -120,6 +120,7 @@
     min-height: 153px;
     margin-bottom: 9px;
     padding-top: 13px;
+    width: 100%;
 
     @media (min-width: $width-tablet){
       margin-top: 40px;

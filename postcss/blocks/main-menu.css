@@ -47,13 +47,13 @@
   @media (min-width: $width-tablet){
     font-size: $font-size-basic;
     font-weight: bold;
-    padding: 0 20px;
+    padding: 0 5px;
 
     &:first-of-type{
       padding: 0 50px;
     }
     &:nth-of-type(2){
-      margin-right: 165px;
+      margin-right: 175px;
     }
     &:last-of-type{
       padding: 0 26px;
@@ -63,7 +63,7 @@
 
   @media (min-width: $width-desktop){
     &:nth-of-type(2){
-      margin-right: 250px;
+      margin-right: 265px;
     }
   }
 
@@ -78,10 +78,10 @@
     text-decoration: none;
     transition: $transition-main;
 
-    &:hover{
+    &[href]:hover{
       background-color: $color-bg-main-darken;
     }
-    &:focus{
+    &[href]:focus{
       background-color: $color-bg-main-dark;
       color: $color-light-transparent;
     }
@@ -91,11 +91,11 @@
       color: $color-text;
       padding: 0;
 
-      &:hover{
+      &[href]:hover{
         background: 0;
         color: $color-bg-main;
       }
-      &:focus{
+      &[href]:focus{
         background: 0;
         color: #cacaca;
       }
