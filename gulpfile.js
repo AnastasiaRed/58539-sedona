@@ -43,7 +43,7 @@ gulp.task("style", function() {
         "last 2 versions"
       ]}),
       mqpacker({
-        sort: false
+        sort: true
       })
     ]))
     .pipe(gulp.dest("build/css"))
