@@ -33,7 +33,7 @@
   }
 }
 .main-menu__item{
-  color: $color-text-inverse;
+  color: $color-text-light;
   font-size: $font-size-headline;
   text-transform: uppercase;
 
