@@ -1,0 +1,46 @@
+.popup{
+  background: $color-bg-light;
+  box-shadow: $box-shadow-main;
+  box-sizing: border-box;
+  left: 0;
+  margin: auto;
+  max-width: 405px;
+  min-width: 320px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  z-index: 99;
+
+  &--success{
+    max-width: 650px;
+  }
+}
+.popup__inner{
+  padding: 50px 50px 0;
+}
+.popup--error .popup__inner{
+  padding-bottom: 50px;
+}
+.popup__title{
+  font-size: $font-size-headline-big;
+  font-weight: bold;
+  line-height: $font-line-height-big;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+.popup__paragraph{
+  font-size: $font-size-basic;
+  line-height: $font-line-height-basic;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+}
+.popup__btn-wrap{
+  background: $color-bg-grey-light;
+  padding: 20px 50px;
+
+  .btn{
+    margin: 0;
+    max-width: 460px;
+  }
+}

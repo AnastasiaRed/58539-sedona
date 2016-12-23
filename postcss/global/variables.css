@@ -1,7 +1,12 @@
-$transition-main: all 0.3s ease;
-
+/*width*/
 $width-tablet: 788px;
 $width-desktop: 1220px;
+
+/*transition*/
+$transition-main: all 0.3s ease;
+
+/*box-shadow*/
+$box-shadow-main: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
 
 /*font*/
 $font-size-basic: 14px;
@@ -12,6 +17,7 @@ $font-size-headline-big: 30px;
 $font-line-height-small: 21px;
 $font-line-height-basic: 24px;
 $font-line-height-headline: 26px;
+$font-line-height-big: 40px;
 
 /*color*/
 $color-text: #000;

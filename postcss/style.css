@@ -39,6 +39,8 @@
 @import "blocks/comment.css";
 @import "blocks/error.css";
 
+@import "blocks/popup.css";
+
 /*footer*/
 @import "blocks/page-footer.css";
 @import "blocks/social-list.css";
