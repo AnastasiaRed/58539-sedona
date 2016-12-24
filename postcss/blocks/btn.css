@@ -44,6 +44,30 @@
   &--in-progress{
      animation: blink 3s linear infinite;
   }
+
+  &--popup{
+    box-sizing: border-box;
+    font-size: $font-size-headline;
+    margin: 0 auto;
+    max-width: 440px;
+
+    @media (min-width: $width-tablet){
+      font-size: $font-size-headline-bigger;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-desktop){
+      margin: 0 auto;
+    }
+  }
+
+  &--popup-small{
+    max-width: 180px;
+
+    @media (min-width: $width-tablet){
+      max-width: 270px;
+    }
+  }
 }
 
 @keyframes blink {
