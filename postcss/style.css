@@ -29,7 +29,6 @@
 
 @import "blocks/presentation.css";
 @import "blocks/presentation-video.css";
-@import "blocks/video-slider.css";
 @import "blocks/presentation-video-controls.css";
 @import "blocks/video-control.css";
 
@@ -39,6 +38,8 @@
 @import "blocks/review-control.css";
 @import "blocks/comment.css";
 @import "blocks/error.css";
+
+@import "blocks/popup.css";
 
 /*footer*/
 @import "blocks/page-footer.css";

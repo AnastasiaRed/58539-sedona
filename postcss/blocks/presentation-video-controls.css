@@ -10,6 +10,7 @@
     background: $color-dark-transparent;
     bottom: 0;
     box-sizing: border-box;
+    height: 95px;
     margin: 0;
     padding: 35px 42px 35px 35px;
     position: absolute;

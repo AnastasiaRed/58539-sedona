@@ -6,10 +6,10 @@
   position: relative;
 
   @media (min-width: $width-tablet){
-    flex: 1 1 50%;
+    flex: 1 1 43%;
   }
 
-  @media (min-width: $widths-desktop){
+  @media (min-width: $width-desktop){
     flex: 1 1 25%;
   }
 
@@ -75,7 +75,7 @@
   }
 
   input[type=text]{
-    width: 100px;
+    width: 100%;
   }
 
   .review-control__tel-wrap,
@@ -120,6 +120,7 @@
     min-height: 153px;
     margin-bottom: 9px;
     padding-top: 13px;
+    width: 100%;
 
     @media (min-width: $width-tablet){
       margin-top: 40px;
@@ -180,7 +181,7 @@
       background-size: 20px;
     }
     input:focus + label::before{
-        background-color: $color-bg-darken;
+        background-color: $color-bg-grey-darken;
     }
   }
 
@@ -231,7 +232,7 @@
       background-color: $color-bg-grey-dark;
     }
     input:focus + label::before{
-      border-color: $color-bg-darken;
+      border-color: $color-bg-grey-darken;
     }
   }
 
