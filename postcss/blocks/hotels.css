@@ -26,13 +26,14 @@
 .hotels__paragraph{
   font-size: $font-size-basic;
   line-height: $font-line-height-basic;
-  margin: 0 0 36px;
+  margin: 0 auto 36px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet){
     padding: 0 20px;
-    margin: 0 0 43px;
+    margin: 0 auto 43px;
+    max-width: 500px;
   }
 
   @media (min-width: $width-desktop){

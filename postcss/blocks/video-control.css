@@ -5,22 +5,20 @@
   margin: 0 16px;
   padding: 0;
 
-  @media (max-width: $width-tablet){
-    path,
-    polygon{
-      fill: #5c6870;
-      transition: $transition-main;
-    }
+  path,
+  polygon{
+    fill: #5c6870;
+    transition: $transition-main;
+  }
 
-    &:hover path,
-    &:hover polygon{
-      fill: $color-bg-dark;
-    }
+  &:hover path,
+  &:hover polygon{
+    fill: $color-bg-dark;
+  }
 
-    &:focus path,
-    &:focus polygon{
-      fill: #c1c1c1;
-    }
+  &:focus path,
+  &:focus polygon{
+    fill: #c1c1c1;
   }
 
   @media (min-width: $width-tablet){

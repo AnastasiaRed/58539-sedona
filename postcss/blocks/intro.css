@@ -1,8 +1,7 @@
 .intro{
   @mixin container;
-  background-color: $color-bg-intro;
   background: url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom/ cover,
-  url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom;
+  $color-bg-intro url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom/ cover;
   box-sizing: border-box;
   color: $color-text-light;
   margin-top: -25px;
@@ -12,12 +11,12 @@
   @media (max-width: $width-tablet) and (min-resolution: 144dpi),
   (max-width: $width-tablet) and (min-resolution: 1.5dppx) {
     background: url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom/ cover,
-    url(../img/bg-back-mobile@2x.jpg) no-repeat center bottom;
+    $color-bg-intro url(../img/bg-back-mobile@2x.jpg) no-repeat center bottom/ cover;
   }
 
   @media (min-width: $width-tablet){
     background: url(../img/bg-intro-triangle-tablet.svg) no-repeat center bottom / contain,
-    url(../img/bg-back-tablet@1x.jpg) no-repeat center bottom / cover;
+    $color-bg-intro url(../img/bg-back-tablet@1x.jpg) no-repeat center bottom / cover;
     margin-top: 0;
     min-height: 520px;
     padding-top: 79px;
@@ -25,18 +24,18 @@
   @media (min-width: $width-tablet) and (min-resolution: 144dpi),
   (min-width: $width-tablet) and (min-resolution: 1.5dppx) {
     background: url(../img/bg-intro-triangle-tablet.svg) no-repeat center bottom / contain,
-    url(../img/bg-back-tablet@2x.jpg) no-repeat center bottom / cover;
+    $color-bg-intro url(../img/bg-back-tablet@2x.jpg) no-repeat center bottom / cover;
   }
 
   @media (min-width: $width-desktop){
     background: url(../img/bg-intro-triangle-desktop.svg) no-repeat center bottom / contain,
-    url(../img/bg-back-desktop@1x.jpg) no-repeat center bottom / cover;
+    $color-bg-intro url(../img/bg-back-desktop@1x.jpg) no-repeat center bottom / cover;
   }
 
   @media (min-width: $width-desktop) and (min-resolution: 144dpi),
   (min-width: $width-desktop) and (min-resolution: 1.5dppx) {
     background: url(../img/bg-intro-triangle-desktop.svg) no-repeat center bottom / contain,
-    url(../img/bg-back-desktop@2x.jpg) no-repeat center bottom / cover;
+    $color-bg-intro url(../img/bg-back-desktop@2x.jpg) no-repeat center bottom / cover;
   }
 
   &--inner{
